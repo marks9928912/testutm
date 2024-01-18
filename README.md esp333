@@ -1,0 +1,770 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+
+	<meta charset="UTF-8">
+			<title>Aplicativo Espiao II</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+
+<title>Aplicativo Espiao II</title>
+<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo;  />
+<link rel="alternate" type="application/rss+xml" title="Aplicativo Espiao &raquo;  />
+
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+
+<style id='wp-webfonts-inline-css'>
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel='stylesheet' id='elementor-icons-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.13.3' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://oespiao.shop/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-5.css?ver=1688803485' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://oespiao.shop/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.6.2' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/global.css?ver=1688803485' media='all' />
+<link rel='stylesheet' id='elementor-post-986-css' href='https://oespiao.shop/wp-content/uploads/elementor/css/post-986.css?ver=1699361268' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.3' media='all' />
+
+
+
+<link rel="https://api.w.org/" href="https://oespiao.shop/index.php/wp-json/" /><link rel="alternate" type="application/json" href="https://oespiao.shop/index.php/wp-json/wp/v2/pages/986" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://oespiao.shop/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://oespiao.shop/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.3" />
+<link rel="canonical" href="videos-simpless.fun/esp2" />
+<link rel='shortlink' href='videos-simpless.fun/esp2' />
+
+<meta name="generator" content="Elementor 3.13.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-986 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-986">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="986" class="elementor elementor-986">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-2b6855f4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b6855f4" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15d0d081" data-id="15d0d081" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-437dae3 elementor-widget elementor-widget-html" data-id="437dae3" data-element_type="widget" data-widget_type="html.default">
+				
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-571fbb03 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="571fbb03" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-653fc992" data-id="653fc992" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-96e08af elementor-widget elementor-widget-image" data-id="96e08af" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.13.3 - 22-05-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img decoding="async" width="1024" height="200" src="https://oespiao.shop/wp-content/uploads/2023/06/SE-ENCONTRARON-10-MENSAJES-COMPROMETEDORES-1.png" class="attachment-large size-large wp-image-1006" alt="" loading="lazy" srcset="https://oespiao.shop/wp-content/uploads/2023/06/SE-ENCONTRARON-10-MENSAJES-COMPROMETEDORES-1.png 1024w, https://oespiao.shop/wp-content/uploads/2023/06/SE-ENCONTRARON-10-MENSAJES-COMPROMETEDORES-1-300x59.png 300w, https://oespiao.shop/wp-content/uploads/2023/06/SE-ENCONTRARON-10-MENSAJES-COMPROMETEDORES-1-768x150.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-488087c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="488087c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56d78ab" data-id="56d78ab" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-27b37b3 elementor-widget elementor-widget-html" data-id="27b37b3" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="vid_65677a1df87262000851ee02" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_65677a1df87262000851ee02" src="https://images.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/players/65677a1df87262000851ee02/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_65677a1df87262000851ee02" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_65677a1df87262000851ee02">var s=document.createElement("script");s.src="https://scripts.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/players/65677a1df87262000851ee02/player.js",s.async=!0,document.head.appendChild(s);</script></div></div></div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-263fd5bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="263fd5bc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9a75187" data-id="9a75187" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5f8b466e elementor-widget elementor-widget-html" data-id="5f8b466e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div class="main_copy">
+    <p class="texto01">Conectando com número...</p>
+    <div class="progress-container">
+        <div class="progress-bar" style="width: 0%;"></div>
+        <div class="progress-text">0%</div>
+    </div>
+    <p>(tempo aproximado: 1 a 2 minutos)</p>
+</div>
+<div class="main_rastreio">
+
+    <section class="fonte_diferente">
+        <h2 class="titulo_rastreio">✅ O RASTREAMENTO FOI FINALIZADO ✅ </h2>
+        <h2>A inteligência do nosso sistema detectou que <span style="font-weight:900;"><span style="text-decoration:underline;"></span> são encontradas em média 11 mensagens comprometedoras</span> </h2>		
+        <h2>Localização do Celular:<br> <span class="address"></span></h2>		
+    </section>
+    
+    </div>
+
+    <section class="botao_ver">
+    <a style="display: block; margin: 0 auto; max-width: 100%;" href="https://videos-simpless.fun/esp3" class="ver_conversas elementor-button-link elementor-button elementor-size-lg" role="button">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-icon elementor-align-icon-right">
+                <i aria-hidden="true" class="fas fa-user-ninja"></i>
+            </span>
+            <span class="elementor-button-text">VER CONVERSAS ENCONTRADAS</span>
+        </span>
+    </a>
+</section>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700&display=swap');
+
+        @keyframes pulsing {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes blink {
+        0%, 50%, 100% {
+            opacity: 1;
+        }
+        25%, 75% {
+            opacity: 0;
+        }
+    }
+
+    .texto01 {
+    animation: blink 1s infinite;
+    }
+
+    .progress-bar {
+        background: #ef3131;
+        transition: width 1s ease-in-out;
+        height: 100%;
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 25px;
+        background-color: #ffffff;
+        border-radius: 100px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #dedede;
+    }
+
+    .progress-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+    }
+
+    .fonte_diferente {
+        font-family: "JetBrains Mono", Sans-serif;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .botao_ver {
+        animation: pulsing 1.5s infinite;
+    }
+
+    .main_copy {
+        background: #ECECEC;
+        text-align: center;
+    }
+
+    .main_rastreio {
+        background: #ECECEC;
+        text-align: center;
+        display: none;
+    }
+
+    .botao_ver {
+        display: none;
+    }
+
+    .main_rastreio h2 {
+        font-size: 13px;
+    }
+
+    .titulo_rastreio{
+        background: #DBDBDB;
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+    .ver_conversas {
+        margin-top: 10px;
+        background: #ec3434
+    }
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script>
+
+    var progressBar = document.querySelector(".progress-bar");
+    var progressText = document.querySelector(".progress-text");
+    var mainCopy = document.querySelector(".main_copy");
+    var mainRastreio = document.querySelector(".main_rastreio");
+    var botaover = document.querySelector(".botao_ver");
+
+    var progress = 0;
+    var totalTime = 90000; // Tempo total em milissegundos (90 segundos)
+    var interval = setInterval(increaseProgress, totalTime / 100);
+
+    function increaseProgress() {
+        progress += 1;
+        progressBar.style.width = progress + "%";
+        progressText.textContent = progress + "%";
+
+        if (progress >= 100) {
+            clearInterval(interval);
+            mainCopy.style.display = "none";
+            mainRastreio.style.display = "block";
+            botaover.style.display = "block";
+        }
+    }
+
+    var texts = [
+        "Conectando com número...",
+        "Conexão sendo realizada...",
+        "Fazendo backup de arquivos...",
+        "Rastreando Whatsapp e Ligações...",
+        "Rastreando Fotos e Vídeos...",
+        "Baixando possiveis provas...",
+        "Rastreamento finalizado..."
+    ];
+
+    var textIndex = 0;
+
+    function changeText() {
+        var textElement = document.querySelector(".texto01");
+        textElement.textContent = texts[textIndex];
+
+        textIndex++;
+        if (textIndex >= texts.length) {
+            textIndex = 0;
+        }
+    }
+
+    // Altera o texto a cada 30 segundos
+    setInterval(changeText, 14000);
+
+    // Inicializa o texto
+    changeText();
+
+</script>
+<script>
+
+    $.get("https://ipinfo.io/json", function (response) {
+        $("#ip").html("IP: " + response.ip);
+        $(".address").html(response.city + ", " + response.region);
+        $("#details").html(JSON.stringify(response, null, 4));
+    }, "jsonp");
+
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-589c4854 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="589c4854" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-37b02e0b" data-id="37b02e0b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-175c690f elementor-widget elementor-widget-html" data-id="175c690f" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>
+    var urlBackRedirect = 'https://videos-simpless.fun/espbr'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3268c94a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3268c94a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5209ff42" data-id="5209ff42" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-19bd9a38 elementor-widget elementor-widget-spacer" data-id="19bd9a38" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.13.3 - 22-05-2023 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+			
+			
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6ac19bd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ac19bd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3bfef321" data-id="3bfef321" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1527dcd9 elementor-widget elementor-widget-html" data-id="1527dcd9" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>
+    var urlBackRedirect = 'https://videos-simpless.fun/espbr'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c473577 elementor-widget elementor-widget-html" data-id="c473577" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+<script>
+    document.addEventListener("keydown", function (e) {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
+            e.preventDefault()
+        }
+    }, true);
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault()
+    }, true);
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	</script>
+	
+	<section class="elementor-section elementor-top-section elementor-element elementor-element-37168f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37168f7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-538382b8" data-id="538382b8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-995a2d0 elementor-widget elementor-widget-heading" data-id="995a2d0" data-element_type="widget" data-widget_type="heading.default">
+				
+				<div class="elementor-widget-container">
+			<style>/* Comentários */
+.c-section {
+    display: block !important;
+    margin: auto !important;
+}
+
+#c-container {
+    background-color: #FFFCFC;
+    border:solid 1px #EBEBEB;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: left !important;
+    padding: 30px 50px 30px 50px;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+.count-c {
+    font-weight: 600;
+    border-bottom: solid 1px #dcdcdc;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.face-c {
+    font-weight: 500;
+    border-top: solid 1px #dcdcdc;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.face-c img {
+    width: 17px;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+
+.foto-c, .foto-c img {
+    background-color:#999;
+    width:50px;
+    height: 50px;
+    float: left;
+}
+
+.nome-c {
+    padding: 0px 0px 0px 10px;
+    display: grid;
+    font-weight: 800;
+    color:#365899;
+    font-size: 14px;
+}
+
+.comentario-c {
+    padding: 0px 0px 0px 10px;
+    display: grid;
+    color:#090909;
+    font-size: 14px;
+    
+}
+
+.hora-c{
+    color: #93979F;
+    padding: 10px 0px 0px 0px;
+    font-size: 11px;
+} 
+
+.c-content {
+    margin: 0px 0px 30px 0px;
+}
+
+.resposta {
+    margin-top: -10px;
+    margin-left: 40px;
+    padding: 0px 0px 0px 10px;
+    border-left: solid 1px #dcdcdc;
+}
+
+.resposta-c {
+    margin-bottom: 10px;
+}
+
+.blue {
+    color:#4a7cdc;
+    font-weight: 600;
+}
+
+.c-section {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /*background-image: url(../img/bg-shadow-y.png);*/
+    background-repeat: repeat-x;
+    background-size: auto 250px;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    position: absolute;
+}
+
+.c1 {
+    top: 100%;
+    right: -900px;
+}
+
+.c2 {
+    top: 30%;
+    left: -900px;
+}
+
+.c3 {
+    top: 34%;
+    right: -237px;
+}
+
+.c4 {
+    top: 51%;
+    left: -680px;
+}
+
+.c5 {
+    top: 67%;
+    right: -1140px;
+}
+
+.c6 {
+    top: 84%;
+    left: -300px;
+}</style>
+
+				<section class="c-section" id="c-section">
+        <div class="container" id="c-container">
+            <div class="row count-c">
+                <div clas="col">
+                    6 Comentários
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+
+                    <!-- COMENTáRIOS 1 -->
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img decoding="async" src="https://oespiao.shop/wp-content/uploads/elementor/thumbs/VbYqA0T79gj5-1-q736ikq68zdhyuv61cgctnhbk0pb0nhakikt4zxiau.webp" alt="Truque do Tomate">
+                            </div>
+                            <div class="nome-c">
+                                Marcos Silva
+                            </div>
+                            <div class="comentario-c">
+                                Galera, não tem o aplicativo nas lojas de aplicativos, só tem aqui! Consegui instalar aqui, não precisou do celular da outra pessoa!
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 3 min
+                        </div>
+                    </div>
+                    
+                    
+
+                    <!-- COMENTáRIOS 2 -->
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img decoding="async" src="https://fluxoativo.com/wp-content/uploads/2022/12/Manuel-Romero.jpg" alt="Truque do Tomate">
+                            </div>
+                            <div class="nome-c">
+                                Joao Rodrigues
+                            </div>
+                            <div class="comentario-c">
+                                Até que enfim um que funciona de vdd, eu ja tinha caido em golpes antes
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 4 min
+                        </div>
+                    </div>
+
+                   
+
+
+                    <!-- COMENTáRIOS 5 -->
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img decoding="async" src="https://fluxoativo.com/wp-content/uploads/2022/12/Miguel-Moreno.jpg" alt="Truque do Tomate">
+                            </div>
+                            <div class="nome-c">
+                                Leandro Pereira
+                            </div>
+                            <div class="comentario-c">
+                                A sensação de alivio é absurda e graças a deus estava errado, Tirei esse peso das minhas costas
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 19 min
+                        </div>
+                    </div>
+                    
+                    <!-- COMENTáRIOS 8 COM RESPOSTAS -->
+                    <div class="c-content">
+                        <div>
+                            <div class="foto-c">
+                                <img decoding="async" src="https://oespiao.shop/wp-content/uploads/elementor/thumbs/UKmFGnXGaL6S-1-q736ikq68zdhyuv61cgctnhbk0pb0nhakikt4zxiau.webp" alt="Truque do Tomate">
+                            </div>
+                            <div class="nome-c">
+                                Leandra Moura
+                            </div>
+                            <div class="comentario-c">
+                                 Alguém sabe me dizer se funciona mesmo?
+                            </div>
+                        </div>
+                        <div class="hora-c">
+                            Responder · Curtir · Seguir · 3 min
+                        </div>
+                    </div>
+
+                    <div class="c-content resposta">
+                        <!-- RESPOSTA 1 -->
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img decoding="async" src="https://oespiao.shop/wp-content/uploads/elementor/thumbs/HsX8IlsVywIj-1-1-q736ikq68zdhyuv61cgctnhbk0pb0nhakikt4zxiau.webp" alt="Truque do Tomate">
+                                </div>
+                                <div class="nome-c">
+                                    Heberti Muller
+                                </div>
+                                <div class="comentario-c">
+                                    Funciona sim amigo, baixei e ja to usando
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 3 min
+                            </div>
+                        </div>
+                        
+                        <div class="c-content resposta">
+                        <!-- RESPOSTA 2 -->
+                        <div class="resposta-c">
+                            <div>
+                                <div class="foto-c">
+                                    <img decoding="async" src="https://oespiao.shop/wp-content/uploads/elementor/thumbs/UKmFGnXGaL6S-1-q736ikq68zdhyuv61cgctnhbk0pb0nhakikt4zxiau.webp" alt="Truque do Tomate">
+                                </div>
+                                <div class="nome-c">
+                                    Leandra Moura
+                                </div>
+                                <div class="comentario-c">
+                                    Funciona sim amigo, baixei e ja to usando
+                                </div>
+                            </div>
+                            <div class="hora-c">
+                                Responder · Curtir · Seguir · 3 min
+                            </div>
+                        </div>
+
+
+                   
+
+                    
+
+                        
+                    </div>
+
+                    
+                        
+                    
+                </div>
+            </div>
+            <div class="row face-c">
+                <div clas="col">
+                    <img decoding="async" src="https://cdn-mariana.perfectpages.com.br/wp-content/uploads/comentarios/face-icon.png"> Plug-in social do Facebook
+                </div>
+            </div>
+      
+            
+
+        <img decoding="async" src="img/c1.png" alt="" data-enllax-ratio=".9" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-329px);" class="c1">
+
+        <img decoding="async" src="img/c2.png" alt="" data-enllax-ratio=".5" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-690px);" class="c2">
+
+        <img decoding="async" src="img/c3.png" alt="" data-enllax-ratio=".4" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-529px);" class="c3">
+
+        <img decoding="async" src="img/c4.png" alt="" data-enllax-ratio=".7" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-753px);" class="c4">
+
+        <img decoding="async" src="img/c5.png" alt="" data-enllax-ratio=".3" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-253px);" class="c5">
+
+        <img decoding="async" src="img/c6.png" alt="" data-enllax-ratio=".9" data-enllax-type="foreground" style="z-index: -99; transform: translateY(-537px);" class="c6">
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/back1.png"></div>
+
+    </div></section>	
+	
+	</body>
+</html>
